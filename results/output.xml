@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230930 09:54:16.090" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot framework demo" source="D:\Dev_Progs\Robot_framework_demo">
+<suite id="s1-s1" name="Testcases" source="D:\Dev_Progs\Robot_framework_demo\testcases">
+<suite id="s1-s1-s1" name="TC1" source="D:\Dev_Progs\Robot_framework_demo\testcases\TC1.robot">
+<kw name="Initialise the browser" library="base_data" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230930 09:54:16.316" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<msg timestamp="20230930 09:54:19.736" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230930 09:54:19.737" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 117.0.5938.92 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00FAA813+48355]
+	(No symbol) [0x00F3C4B1]
+	(No symbol) [0x00E45358]
+	(No symbol) [0x00E661AC]
+	(No symbol) [0x00E61EF3]
+	(No symbol) [0x00E60579]
+	(No symbol) [0x00E90C55]
+	(No symbol) [0x00E9093C]
+	(No symbol) [0x00E8A536]
+	(No symbol) [0x00E682DC]
+	(No symbol) [0x00E693DD]
+	GetHandleVerifier [0x0120AABD+2539405]
+	GetHandleVerifier [0x0124A78F+2800735]
+	GetHandleVerifier [0x0124456C+2775612]
+	GetHandleVerifier [0x010351E0+616112]
+	(No symbol) [0x00F45F8C]
+	(No symbol) [0x00F42328]
+	(No symbol) [0x00F4240B]
+	(No symbol) [0x00F34FF7]
+	BaseThreadInitThunk [0x76CB7BA9+25]
+	RtlInitializeExceptionChain [0x77E6BC5B+107]
+	RtlClearBits [0x77E6BBDF+191]
+</msg>
+<status status="FAIL" starttime="20230930 09:54:16.316" endtime="20230930 09:54:19.739"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230930 09:54:19.739" endtime="20230930 09:54:19.739"/>
+</kw>
+<status status="FAIL" starttime="20230930 09:54:16.315" endtime="20230930 09:54:19.739"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Select element from dropdown list" line="21">
+<status status="FAIL" starttime="20230930 09:54:19.739" endtime="20230930 09:54:19.739">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 117.0.5938.92 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00FAA813+48355]
+	(No symbol) [0x00F3C4B1]
+	(No symbol) [0x00E45358]
+	(No symbol) [0x00E661AC]
+	(No symbol) [0x00E61EF3]
+	(No symbol) [0x00E60579]
+	(No symbol) [0x00E90C55]
+	(No symbol) [0x00E9093C]
+	(No symbol) [0x00E8A536]
+	(No symbol) [0x00E682DC]
+	(No symbol) [0x00E693DD]
+	GetHandleVerifier [0x0120AABD+2539405]
+	GetHandleVerifier [0x0124A78F+2800735]
+	GetHandleVerifier [0x0124456C+2775612]
+	GetHandleVerifier [0x010351E0+616112]
+	(No symbol) [0x00F45F8C]
+	(No symbol) [0x00F42328]
+	(No symbol) [0x00F4240B]
+	(No symbol) [0x00F34FF7]
+	BaseThreadInitThunk [0x76CB7BA9+25]
+	RtlInitializeExceptionChain [0x77E6BC5B+107]
+	RtlClearBits [0x77E6BBDF+191]
+</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230930 09:54:19.739" endtime="20230930 09:54:19.739"/>
+</kw>
+<status status="FAIL" starttime="20230930 09:54:16.131" endtime="20230930 09:54:19.739">Suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 117.0.5938.92 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00FAA813+48355]
+	(No symbol) [0x00F3C4B1]
+	(No symbol) [0x00E45358]
+	(No symbol) [0x00E661AC]
+	(No symbol) [0x00E61EF3]
+	(No symbol) [0x00E60579]
+	(No symbol) [0x00E90C55]
+	(No symbol) [0x00E9093C]
+	(No symbol) [0x00E8A536]
+	(No symbol) [0x00E682DC]
+	(No symbol) [0x00E693DD]
+	GetHandleVerifier [0x0120AABD+2539405]
+	GetHandleVerifier [0x0124A78F+2800735]
+	GetHandleVerifier [0x0124456C+2775612]
+	GetHandleVerifier [0x010351E0+616112]
+	(No symbol) [0x00F45F8C]
+	(No symbol) [0x00F42328]
+	(No symbol) [0x00F4240B]
+	(No symbol) [0x00F34FF7]
+	BaseThreadInitThunk [0x76CB7BA9+25]
+	RtlInitializeExceptionChain [0x77E6BC5B+107]
+	RtlClearBits [0x77E6BBDF+191]
+</status>
+</suite>
+<status status="FAIL" starttime="20230930 09:54:16.125" endtime="20230930 09:54:19.760"/>
+</suite>
+<status status="FAIL" starttime="20230930 09:54:16.095" endtime="20230930 09:54:19.762"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot framework demo">Robot framework demo</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Testcases">Robot framework demo.Testcases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TC1">Robot framework demo.Testcases.TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
