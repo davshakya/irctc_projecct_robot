@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20231001 08:08:35.800" rpa="false" schemaversion="3">
-<suite id="s1" name="Homepage" source="d:\Dev_Progs\irctc_robot_framework\testcases\homepage.robot">
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20231001 13:29:34.708" rpa="false" schemaversion="3">
+<suite id="s1" name="Homepage" source="d:\Dev_Progs\irctc_projecct_robot\testcases\homepage.robot">
 <kw name="Initialise the browser" library="basetest" type="SETUP">
 <kw name="Launch browser" library="basetest">
 <kw name="Evaluate" library="BuiltIn">
@@ -8,78 +8,78 @@
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231001 08:08:38.346" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001D8DE6E1BB0&gt;</msg>
-<status status="PASS" starttime="20231001 08:08:38.346" endtime="20231001 08:08:38.362"/>
+<msg timestamp="20231001 13:29:37.388" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002805AA58A30&gt;</msg>
+<status status="PASS" starttime="20231001 13:29:37.388" endtime="20231001 13:29:37.388"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.364" endtime="20231001 08:08:38.366"/>
+<status status="PASS" starttime="20231001 13:29:37.388" endtime="20231001 13:29:37.404"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.366" endtime="20231001 08:08:38.368"/>
+<status status="PASS" starttime="20231001 13:29:37.404" endtime="20231001 13:29:37.406"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-extensions</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.368" endtime="20231001 08:08:38.374"/>
+<status status="PASS" starttime="20231001 13:29:37.406" endtime="20231001 13:29:37.408"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.376" endtime="20231001 08:08:38.377"/>
+<status status="PASS" starttime="20231001 13:29:37.409" endtime="20231001 13:29:37.414"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-popup-blocking</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.378" endtime="20231001 08:08:38.379"/>
+<status status="PASS" starttime="20231001 13:29:37.417" endtime="20231001 13:29:37.418"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--dns-prefetch-disable</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.380" endtime="20231001 08:08:38.381"/>
+<status status="PASS" starttime="20231001 13:29:37.419" endtime="20231001 13:29:37.420"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>window-size\=1920,1080</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.382" endtime="20231001 08:08:38.382"/>
+<status status="PASS" starttime="20231001 13:29:37.421" endtime="20231001 13:29:37.423"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-blink-features\=AutomationControlled</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.389" endtime="20231001 08:08:38.390"/>
+<status status="PASS" starttime="20231001 13:29:37.423" endtime="20231001 13:29:37.432"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-blink-features</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.392" endtime="20231001 08:08:38.392"/>
+<status status="PASS" starttime="20231001 13:29:37.432" endtime="20231001 13:29:37.434"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-infobars</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.392" endtime="20231001 08:08:38.392"/>
+<status status="PASS" starttime="20231001 13:29:37.434" endtime="20231001 13:29:37.434"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -87,15 +87,15 @@
 <arg>useAutomationExtension</arg>
 <arg>${False}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.392" endtime="20231001 08:08:38.392"/>
+<status status="PASS" starttime="20231001 13:29:37.434" endtime="20231001 13:29:37.434"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${prefs}</var>
 <arg>credentials_enable_service=${FALSE}</arg>
 <arg>profile.password_manager_enabled=${False}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20231001 08:08:38.392" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
-<status status="PASS" starttime="20231001 08:08:38.392" endtime="20231001 08:08:38.392"/>
+<msg timestamp="20231001 13:29:37.444" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<status status="PASS" starttime="20231001 13:29:37.434" endtime="20231001 13:29:37.444"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -103,29 +103,29 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.392" endtime="20231001 08:08:38.392"/>
+<status status="PASS" starttime="20231001 13:29:37.445" endtime="20231001 13:29:37.446"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${userAgent}</var>
 <arg>--user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231001 08:08:38.405" level="INFO">${userAgent} = --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"</msg>
-<status status="PASS" starttime="20231001 08:08:38.392" endtime="20231001 08:08:38.406"/>
+<msg timestamp="20231001 13:29:37.446" level="INFO">${userAgent} = --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"</msg>
+<status status="PASS" starttime="20231001 13:29:37.446" endtime="20231001 13:29:37.446"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>${userAgent}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.407" endtime="20231001 08:08:38.407"/>
+<status status="PASS" starttime="20231001 13:29:37.446" endtime="20231001 13:29:37.446"/>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <var>${excluded}</var>
 <arg>enable-automation</arg>
 <arg>enable-logging</arg>
 <doc>Returns a list containing given items.</doc>
-<msg timestamp="20231001 08:08:38.407" level="INFO">${excluded} = ['enable-automation', 'enable-logging']</msg>
-<status status="PASS" starttime="20231001 08:08:38.407" endtime="20231001 08:08:38.407"/>
+<msg timestamp="20231001 13:29:37.446" level="INFO">${excluded} = ['enable-automation', 'enable-logging']</msg>
+<status status="PASS" starttime="20231001 13:29:37.446" endtime="20231001 13:29:37.446"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -133,108 +133,113 @@
 <arg>excludeSwitches</arg>
 <arg>${excluded}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20231001 08:08:38.407" endtime="20231001 08:08:38.407"/>
+<status status="PASS" starttime="20231001 13:29:37.446" endtime="20231001 13:29:37.446"/>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>driver_name=Chrome</arg>
 <arg>options=${chrome_options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20231001 08:08:38.407" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20231001 08:08:38.407" endtime="20231001 08:08:39.789"/>
+<msg timestamp="20231001 13:29:37.446" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20231001 13:29:37.446" endtime="20231001 13:29:38.885"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${chrome_options}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231001 08:08:39.791" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001D8DE6E1BB0&gt;</msg>
-<status status="PASS" starttime="20231001 08:08:39.789" endtime="20231001 08:08:39.791"/>
+<msg timestamp="20231001 13:29:38.891" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002805AA58A30&gt;</msg>
+<status status="PASS" starttime="20231001 13:29:38.888" endtime="20231001 13:29:38.891"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231001 08:08:39.792" endtime="20231001 08:08:39.923"/>
+<status status="PASS" starttime="20231001 13:29:38.894" endtime="20231001 13:29:39.026"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231001 08:08:39.927" level="INFO">Opening url 'https://www.irctc.co.in/'</msg>
-<status status="PASS" starttime="20231001 08:08:39.924" endtime="20231001 08:09:09.733"/>
+<msg timestamp="20231001 13:29:39.030" level="INFO">Opening url 'https://www.irctc.co.in/'</msg>
+<status status="PASS" starttime="20231001 13:29:39.026" endtime="20231001 13:29:45.010"/>
 </kw>
-<status status="PASS" starttime="20231001 08:08:38.346" endtime="20231001 08:09:09.734"/>
+<status status="PASS" starttime="20231001 13:29:37.388" endtime="20231001 13:29:45.010"/>
 </kw>
-<status status="PASS" starttime="20231001 08:08:38.346" endtime="20231001 08:09:09.735"/>
+<status status="PASS" starttime="20231001 13:29:37.388" endtime="20231001 13:29:45.013"/>
 </kw>
 <test id="s1-t1" name="user should login irctc portal" line="12">
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${login_button}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20231001 08:09:09.739" endtime="20231001 08:09:09.797"/>
+<status status="PASS" starttime="20231001 13:29:45.017" endtime="20231001 13:29:45.087"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231001 08:09:09.798" level="INFO">Clicking element '//a[contains(text(),'LOGIN')]'.</msg>
-<status status="PASS" starttime="20231001 08:09:09.798" endtime="20231001 08:09:09.993"/>
+<msg timestamp="20231001 13:29:45.090" level="INFO">Clicking element '//a[contains(text(),'LOGIN')]'.</msg>
+<status status="PASS" starttime="20231001 13:29:45.090" endtime="20231001 13:29:45.346"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${user_name}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20231001 08:09:09.999" endtime="20231001 08:09:10.088"/>
+<status status="PASS" starttime="20231001 13:29:45.346" endtime="20231001 13:29:45.455"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${user_name}</arg>
 <arg>davshakya</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231001 08:09:10.092" level="INFO">Typing text 'davshakya' into text field '//input[@placeholder='User Name']'.</msg>
-<status status="PASS" starttime="20231001 08:09:10.088" endtime="20231001 08:09:10.365"/>
+<msg timestamp="20231001 13:29:45.455" level="INFO">Typing text 'davshakya' into text field '//input[@placeholder='User Name']'.</msg>
+<status status="PASS" starttime="20231001 13:29:45.455" endtime="20231001 13:29:45.871"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${password}</arg>
 <arg>Ranjana21#</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231001 08:09:10.370" level="INFO">Typing text 'Ranjana21#' into text field '//input[@placeholder='Password']'.</msg>
-<status status="PASS" starttime="20231001 08:09:10.368" endtime="20231001 08:09:10.546"/>
+<msg timestamp="20231001 13:29:45.877" level="INFO">Typing text 'Ranjana21#' into text field '//input[@placeholder='Password']'.</msg>
+<status status="PASS" starttime="20231001 13:29:45.872" endtime="20231001 13:29:46.122"/>
 </kw>
-<kw name="Enter captcha" library="homepage">
+<kw name="Enter captcha text" library="homepage">
 <kw name="get captcha text from image" library="homepage">
 <var>${get_text_captcha}</var>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${captcha_image}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231001 13:29:46.130" endtime="20231001 13:29:46.239"/>
+</kw>
 <kw name="Get WebElement" library="SeleniumLibrary">
 <var>${image_element}</var>
 <arg>${captcha_image}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231001 08:09:10.584" level="INFO">${image_element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="56c4cb6593e1fdee756430878501e6dc", element="0A242C5689A2CCD472BE550A5305EDB7_element_135")&gt;</msg>
-<status status="PASS" starttime="20231001 08:09:10.546" endtime="20231001 08:09:10.584"/>
+<msg timestamp="20231001 13:29:46.304" level="INFO">${image_element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="e8904913bbb29dfc7b9cff8703126f9a", element="7B39EA2EF3D7CC0ED91CFCFBF32A4C14_element_138")&gt;</msg>
+<status status="PASS" starttime="20231001 13:29:46.248" endtime="20231001 13:29:46.305"/>
 </kw>
 <kw name="Get Captcha Text" library="test_utils">
 <var>${text}</var>
 <arg>${image_element}</arg>
-<msg timestamp="20231001 08:09:10.982" level="INFO">${text} = 4QrrN</msg>
-<status status="PASS" starttime="20231001 08:09:10.584" endtime="20231001 08:09:10.982"/>
+<msg timestamp="20231001 13:29:46.809" level="INFO">${text} = qNVe</msg>
+<status status="PASS" starttime="20231001 13:29:46.305" endtime="20231001 13:29:46.811"/>
 </kw>
-<msg timestamp="20231001 08:09:10.984" level="INFO">${get_text_captcha} = 4QrrN</msg>
-<status status="PASS" starttime="20231001 08:09:10.546" endtime="20231001 08:09:10.985"/>
+<msg timestamp="20231001 13:29:46.814" level="INFO">${get_text_captcha} = qNVe</msg>
+<status status="PASS" starttime="20231001 13:29:46.127" endtime="20231001 13:29:46.816"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${get_text_captcha}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231001 08:09:10.986" endtime="20231001 08:09:10.989"/>
+<status status="PASS" starttime="20231001 13:29:46.818" endtime="20231001 13:29:46.823"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${captcha_input_box}</arg>
 <arg>${get_text_captcha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231001 08:09:10.996" level="INFO">Typing text '4QrrN' into text field '//input[@id='captcha']'.</msg>
-<status status="PASS" starttime="20231001 08:09:10.991" endtime="20231001 08:09:11.623"/>
+<msg timestamp="20231001 13:29:46.832" level="INFO">Typing text 'qNVe' into text field '//input[@id='captcha']'.</msg>
+<status status="PASS" starttime="20231001 13:29:46.825" endtime="20231001 13:29:47.018"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${sign_in_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231001 08:09:11.625" level="INFO">Clicking element '//button[normalize-space()='SIGN IN']'.</msg>
-<status status="PASS" starttime="20231001 08:09:11.624" endtime="20231001 08:09:11.798"/>
+<msg timestamp="20231001 13:29:47.024" level="INFO">Clicking element '//button[normalize-space()='SIGN IN']'.</msg>
+<status status="PASS" starttime="20231001 13:29:47.021" endtime="20231001 13:29:47.257"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231001 08:09:16.814" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231001 08:09:11.802" endtime="20231001 08:09:16.816"/>
+<msg timestamp="20231001 13:29:52.276" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231001 13:29:47.259" endtime="20231001 13:29:52.276"/>
 </kw>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${isExist}</var>
@@ -244,131 +249,218 @@
 <kw name="Element Should Be Enabled" library="SeleniumLibrary">
 <arg>${invalid_captcha_text}</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<msg timestamp="20231001 08:09:17.506" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-60.png"&gt;&lt;img src="selenium-screenshot-60.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20231001 08:09:17.508" level="FAIL">Element with locator '//div[contains(text(),'Invalid Captcha')]' not found.</msg>
-<status status="FAIL" starttime="20231001 08:09:16.822" endtime="20231001 08:09:17.519"/>
+<msg timestamp="20231001 13:29:52.890" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231001 13:29:52.891" level="FAIL">Element with locator '//div[contains(text(),'Invalid Captcha')]' not found.</msg>
+<status status="FAIL" starttime="20231001 13:29:52.283" endtime="20231001 13:29:52.903"/>
 </kw>
-<msg timestamp="20231001 08:09:17.520" level="INFO">${isExist} = False</msg>
-<status status="PASS" starttime="20231001 08:09:16.818" endtime="20231001 08:09:17.521"/>
+<msg timestamp="20231001 13:29:52.905" level="INFO">${isExist} = False</msg>
+<status status="PASS" starttime="20231001 13:29:52.277" endtime="20231001 13:29:52.906"/>
 </kw>
 <while condition="${isExist}==$True">
 <iter>
 <kw name="get captcha text from image" library="homepage">
 <var>${get_text_captcha}</var>
-<status status="NOT RUN" starttime="20231001 08:09:17.524" endtime="20231001 08:09:17.524"/>
+<status status="NOT RUN" starttime="20231001 13:29:52.911" endtime="20231001 13:29:52.912"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${get_text_captcha}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20231001 08:09:17.525" endtime="20231001 08:09:17.526"/>
+<status status="NOT RUN" starttime="20231001 13:29:52.915" endtime="20231001 13:29:52.917"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${captcha_input_box}</arg>
 <arg>${get_text_captcha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231001 08:09:17.526" endtime="20231001 08:09:17.528"/>
+<status status="NOT RUN" starttime="20231001 13:29:52.919" endtime="20231001 13:29:52.920"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${sign_in_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231001 08:09:17.530" endtime="20231001 08:09:17.531"/>
+<status status="NOT RUN" starttime="20231001 13:29:52.922" endtime="20231001 13:29:52.923"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
+<arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231001 08:09:17.532" endtime="20231001 08:09:17.532"/>
+<status status="NOT RUN" starttime="20231001 13:29:52.923" endtime="20231001 13:29:52.924"/>
 </kw>
 <kw name="Return From Keyword" library="BuiltIn">
-<var>${exist}</var>
+<var>${isExist}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${invalid_captcha_text}</arg>
 <doc>Returns from the enclosing user keyword.</doc>
-<status status="NOT RUN" starttime="20231001 08:09:17.533" endtime="20231001 08:09:17.534"/>
+<status status="NOT RUN" starttime="20231001 13:29:52.925" endtime="20231001 13:29:52.926"/>
 </kw>
-<status status="NOT RUN" starttime="20231001 08:09:17.522" endtime="20231001 08:09:17.534"/>
+<status status="NOT RUN" starttime="20231001 13:29:52.907" endtime="20231001 13:29:52.927"/>
 </iter>
-<status status="NOT RUN" starttime="20231001 08:09:17.521" endtime="20231001 08:09:17.535"/>
+<status status="NOT RUN" starttime="20231001 13:29:52.907" endtime="20231001 13:29:52.928"/>
 </while>
-<status status="PASS" starttime="20231001 08:09:10.546" endtime="20231001 08:09:17.535"/>
+<status status="PASS" starttime="20231001 13:29:46.123" endtime="20231001 13:29:52.930"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231001 08:09:19.546" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20231001 08:09:17.537" endtime="20231001 08:09:19.548"/>
+<msg timestamp="20231001 13:29:54.941" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231001 13:29:52.936" endtime="20231001 13:29:54.942"/>
 </kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${input_from_city_name}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20231001 08:09:19.552" endtime="20231001 08:09:19.608"/>
+<kw name="Enter journy details to search train" library="homepage">
+<kw name="Get From City" library="test_utils">
+<var>${start_city}</var>
+<msg timestamp="20231001 13:29:57.266" level="INFO">${start_city} = ORAI</msg>
+<status status="PASS" starttime="20231001 13:29:54.952" endtime="20231001 13:29:57.268"/>
+</kw>
+<kw name="Get To City" library="test_utils">
+<var>${destination_city}</var>
+<msg timestamp="20231001 13:29:58.377" level="INFO">${destination_city} = LUCKNOW NR</msg>
+<status status="PASS" starttime="20231001 13:29:57.270" endtime="20231001 13:29:58.378"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>${input_from_city_name}</arg>
-<arg>Orai</arg>
+<arg>${enter_start_city_code}</arg>
+<arg>${start_city}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231001 08:09:19.614" level="INFO">Typing text 'Orai' into text field '(//input[contains(@class,'ui-inputtext')])[1]'.</msg>
-<status status="PASS" starttime="20231001 08:09:19.610" endtime="20231001 08:09:19.769"/>
+<msg timestamp="20231001 13:29:58.387" level="INFO">Typing text 'ORAI' into text field '(//input[contains(@class,'ui-inputtext')])[1]'.</msg>
+<status status="PASS" starttime="20231001 13:29:58.379" endtime="20231001 13:29:58.553"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231001 08:09:24.776" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231001 08:09:19.771" endtime="20231001 08:09:24.777"/>
+<msg timestamp="20231001 13:30:03.558" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231001 13:29:58.554" endtime="20231001 13:30:03.559"/>
+</kw>
+<kw name="select city from dropdown" library="homepage">
+<arg>${start_city}</arg>
+<kw name="Format String" library="String">
+<var>${check_city_name}</var>
+<arg>${select_dropdown_city_name_1}</arg>
+<arg>${city_name}</arg>
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<msg timestamp="20231001 13:30:03.571" level="INFO">${check_city_name} = (//div//ul/li/span[contains(text(),'ORAI -')])[1]</msg>
+<status status="PASS" starttime="20231001 13:30:03.568" endtime="20231001 13:30:03.572"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${isExist}</var>
+<arg>Element Should Be Enabled</arg>
+<arg>${check_city_name}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${check_city_name}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231001 13:30:03.579" endtime="20231001 13:30:03.655"/>
+</kw>
+<msg timestamp="20231001 13:30:03.657" level="INFO">${isExist} = True</msg>
+<status status="PASS" starttime="20231001 13:30:03.574" endtime="20231001 13:30:03.658"/>
+</kw>
+<if>
+<branch type="IF" condition="${isExist} == $True">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${check_city_name}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231001 13:30:03.671" level="INFO">Clicking element '(//div//ul/li/span[contains(text(),'ORAI -')])[1]'.</msg>
+<status status="PASS" starttime="20231001 13:30:03.665" endtime="20231001 13:30:03.745"/>
+</kw>
+<status status="PASS" starttime="20231001 13:30:03.660" endtime="20231001 13:30:03.745"/>
+</branch>
+<branch type="ELSE">
+<kw name="Format String" library="String">
+<var>${get_city_name}</var>
+<arg>${select_dropdown_city_name_2}</arg>
+<arg>${city_name}</arg>
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<status status="NOT RUN" starttime="20231001 13:30:03.749" endtime="20231001 13:30:03.751"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${select_from_city_name}</arg>
+<arg>${get_city_name}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231001 08:09:24.788" level="INFO">Clicking element '//span[contains(text(),'-- Stations --')]/parent::li/following-sibling::li | (//div/ul[@id='pr_id_2_list']/li/span)[1]'.</msg>
-<status status="PASS" starttime="20231001 08:09:24.784" endtime="20231001 08:09:24.872"/>
+<status status="NOT RUN" starttime="20231001 13:30:03.752" endtime="20231001 13:30:03.752"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231001 08:09:26.877" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20231001 08:09:24.872" endtime="20231001 08:09:26.879"/>
-</kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${input_to_city_name}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20231001 08:09:26.883" endtime="20231001 08:09:26.932"/>
+<status status="NOT RUN" starttime="20231001 13:30:03.746" endtime="20231001 13:30:03.753"/>
+</branch>
+<status status="PASS" starttime="20231001 13:30:03.659" endtime="20231001 13:30:03.753"/>
+</if>
+<status status="PASS" starttime="20231001 13:30:03.560" endtime="20231001 13:30:03.754"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>${input_to_city_name}</arg>
-<arg>Lucknow nr</arg>
+<arg>${enter_destination_city_code}</arg>
+<arg>${destination_city}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231001 08:09:26.936" level="INFO">Typing text 'Lucknow nr' into text field '(//input[contains(@class,'ui-inputtext')])[2]'.</msg>
-<status status="PASS" starttime="20231001 08:09:26.934" endtime="20231001 08:09:27.099"/>
+<msg timestamp="20231001 13:30:03.757" level="INFO">Typing text 'LUCKNOW NR' into text field '(//input[contains(@class,'ui-inputtext')])[2]'.</msg>
+<status status="PASS" starttime="20231001 13:30:03.755" endtime="20231001 13:30:03.992"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231001 08:09:32.107" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231001 08:09:27.100" endtime="20231001 08:09:32.109"/>
+<msg timestamp="20231001 13:30:09.007" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231001 13:30:03.993" endtime="20231001 13:30:09.007"/>
+</kw>
+<kw name="select city from dropdown" library="homepage">
+<arg>${destination_city}</arg>
+<kw name="Format String" library="String">
+<var>${check_city_name}</var>
+<arg>${select_dropdown_city_name_1}</arg>
+<arg>${city_name}</arg>
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<msg timestamp="20231001 13:30:09.020" level="INFO">${check_city_name} = (//div//ul/li/span[contains(text(),'LUCKNOW NR -')])[1]</msg>
+<status status="PASS" starttime="20231001 13:30:09.015" endtime="20231001 13:30:09.021"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${isExist}</var>
+<arg>Element Should Be Enabled</arg>
+<arg>${check_city_name}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${check_city_name}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231001 13:30:09.026" endtime="20231001 13:30:09.091"/>
+</kw>
+<msg timestamp="20231001 13:30:09.091" level="INFO">${isExist} = True</msg>
+<status status="PASS" starttime="20231001 13:30:09.024" endtime="20231001 13:30:09.092"/>
+</kw>
+<if>
+<branch type="IF" condition="${isExist} == $True">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${check_city_name}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231001 13:30:09.100" level="INFO">Clicking element '(//div//ul/li/span[contains(text(),'LUCKNOW NR -')])[1]'.</msg>
+<status status="PASS" starttime="20231001 13:30:09.095" endtime="20231001 13:30:09.173"/>
+</kw>
+<status status="PASS" starttime="20231001 13:30:09.092" endtime="20231001 13:30:09.173"/>
+</branch>
+<branch type="ELSE">
+<kw name="Format String" library="String">
+<var>${get_city_name}</var>
+<arg>${select_dropdown_city_name_2}</arg>
+<arg>${city_name}</arg>
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<status status="NOT RUN" starttime="20231001 13:30:09.175" endtime="20231001 13:30:09.175"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${select_from_city_name}</arg>
+<arg>${get_city_name}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231001 08:09:32.118" level="INFO">Clicking element '//span[contains(text(),'-- Stations --')]/parent::li/following-sibling::li | (//div/ul[@id='pr_id_2_list']/li/span)[1]'.</msg>
-<status status="PASS" starttime="20231001 08:09:32.111" endtime="20231001 08:09:32.206"/>
+<status status="NOT RUN" starttime="20231001 13:30:09.176" endtime="20231001 13:30:09.176"/>
 </kw>
-<status status="PASS" starttime="20231001 08:09:09.735" endtime="20231001 08:09:32.209"/>
-</test>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231001 08:09:32.209" endtime="20231001 08:09:34.463"/>
+<status status="NOT RUN" starttime="20231001 13:30:09.174" endtime="20231001 13:30:09.177"/>
+</branch>
+<status status="PASS" starttime="20231001 13:30:09.092" endtime="20231001 13:30:09.177"/>
+</if>
+<status status="PASS" starttime="20231001 13:30:09.010" endtime="20231001 13:30:09.178"/>
 </kw>
-<status status="PASS" starttime="20231001 08:08:35.802" endtime="20231001 08:09:34.463"/>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Homepage">Homepage</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
+<status status="PASS" starttime="20231001 13:29:54.943" endtime="20231001 13:30:09.178"/>
+</kw>
+<kw name="Set date of journy" library="homepage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${open_calendar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231001 13:30:09.190" level="INFO">Clicking element '(//input[contains(@class,'ui-inputtext')])[3]'.</msg>
+<status status="PASS" starttime="20231001 13:30:09.186" endtime="20231001 13:30:09.331"/>
+</kw>
+<kw name="Journy Date" library="test_utils">
+<var>${get_date}</var>
+<msg timestamp="20231001 13:30:10.534" level="INFO">${get_date} = nan</msg>
+<status status="PASS" starttime="20231001 13:30:09.336" endtime="20231001 13:30:10.535"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${date_formate_loc}</arg>
+<arg>${get_date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231001 13:30:10.538" level="INFO">Typing text 'nan' into text field '//*[@dateformat='dd/mm/yy']/span/input'.</msg>
+<status status="PASS" starttime="20231001 13:30:10.536" endtime="20231001 13:30:10.673"/>
+</kw>

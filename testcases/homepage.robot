@@ -17,7 +17,9 @@ user should login irctc portal
     Input Text    ${password}      Ranjana21#
     Enter captcha text
     Sleep    2
-    
+    Enter journey details to search train
+    Set date of journey
+    Click Element    ${search_button_loc}  
 
 
 

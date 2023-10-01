@@ -28,4 +28,5 @@ Library           JSONLibrary
 # Library    ../custom_python_keywords/test_utils.py
 # Library    ../custom_python_keywords/custom_keywords_db.py
 # Library    ../custom_python_keywords/custom_keywords_api.py
+# Library    ../test_utils/test_utils.py
 Library    ../test_utils/test_utils.py

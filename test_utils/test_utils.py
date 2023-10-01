@@ -147,12 +147,12 @@ class test_utils:
     
     @keyword
     def get_from_city(self):
-        train_file=pd.read_excel("D:/Dev_Progs/irctc_project/trains_data.xlsx")
+        train_file=pd.read_excel("D:/Dev_Progs/irctc_projecct_robot/user_data/trains_data.xlsx")
         return  train_file.iloc[0,1] 
         # print(get_from_city())
     @keyword
     def get_to_city(self):
-        train_file=pd.read_excel("D:/Dev_Progs/irctc_project/trains_data.xlsx")
+        train_file=pd.read_excel("D:/Dev_Progs/irctc_projecct_robot/user_data/trains_data.xlsx")
         return  train_file.iloc[1,1] 
 
     @keyword
@@ -160,15 +160,14 @@ class test_utils:
         with open('logo.jpg', 'wb') as file:
             file.write(element.screenshot_as_png)
         path_to_tesseract = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
-        image_path = r"D:/Dev_Progs/irctc_robot_framework/logo.jpg"
+        image_path = r"D:/Dev_Progs/irctc_projecct_robot/logo.jpg"
         img = Image.open(image_path)
         pytesseract.tesseract_cmd = path_to_tesseract
         text = pytesseract.image_to_string(img)
         captcha_text=text[:-1]
         return  captcha_text
     
-
     @keyword
-    def current_driver_instance(self,url):
-        selib = BuiltIn().get_library_instance('SeleniumLibrary')
-        return  selib.driver.get(url)
+    def journey_date(sef):
+        train_file=pd.read_excel("D:/Dev_Progs/irctc_projecct_robot/user_data/trains_data.xlsx")
+        return  train_file.iloc[2,1] 
