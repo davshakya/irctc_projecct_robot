@@ -9,7 +9,7 @@ Suite Teardown      close browser
 
 *** Test Cases ***
 
-user should login irctc portal
+User should login to irctc portal
     Wait Until Element Is Enabled    ${login_button}  
     Click Element    ${login_button}  
     Wait Until Element Is Enabled    ${user_name}  
@@ -19,8 +19,10 @@ user should login irctc portal
     Sleep    2
     Enter journey details to search train
     Set date of journey
-    Click Element    ${search_button_loc}  
+    Click Element    ${search_button_loc} 
 
+User should book ticket
+        
 
 
 

@@ -31,6 +31,11 @@ ${select_date_of_journey}    (//span/following::td[normalize-space()='{}'])[1]
 ${month_name_loc}     //span[normalize-space()='{}']
 ${search_button_loc}        //button[contains(text(),'Search')]
 ${date_formate_loc}    //*[@dateformat='dd/mm/yy']/span/input
+${train_refresh}        //div[@class='tbis-div']//*[contains(text(),'{}')]/parent::div/parent::div/parent::div/div[5]//td[1]//span
+${seat_status}        //div[@class='tbis-div']//*[contains(text(),'{}')]/parent::div/parent::div/parent::div/div[7]/div/div[3]//strong[contains(text(),'CURR_AVBL-') or contains(text(),'AVAILABLE-')]
+${book_buttonloc}    //div[@class='tbis-div']//*[contains(text(),'{}')]/ancestor::app-train-avl-enq/div[2]//button
+${not_available}    //div[@class='tbis-div']//*[contains(text(),'{}')]/ancestor::app-train-avl-enq/div/div[7]//div[3]//td//strong[contains(text(),'NOT AVAILABLE')]
+${seat_select_button}        //div[@class='tbis-div']//*[contains(text(),'{}')]/ancestor::app-train-avl-enq/div/div[7]//li//strong/span[contains(text(),'{}')]
 
 
 
@@ -38,7 +43,7 @@ ${date_formate_loc}    //*[@dateformat='dd/mm/yy']/span/input
 
 
 get captcha text from image
-    Wait Until Element Is Visible    ${captcha_image}
+    Wait Until Element Is Visible    ${captcha_image}    120
     ${image_element} =    Get WebElement    ${captcha_image}
     ${text}=        get captcha text    ${image_element}
     [Return]      ${text}  
@@ -58,8 +63,6 @@ Enter captcha text
         Sleep    5
         ${isExist}    Return From Keyword    Element Should Be Visible    ${invalid_captcha_text} 
     END
-
-
 
 
 Enter journey details to search train
@@ -95,3 +98,8 @@ Set date of journey
     ${get_only_date}    Get Substring	${get_date}    0		2     
     ${get_xpath_for_date}    Format String    ${select_date_of_journey}    ${get_only_date} 
     Click Element    ${get_xpath_for_date}   
+
+User should book ticket
+    
+    
+    
