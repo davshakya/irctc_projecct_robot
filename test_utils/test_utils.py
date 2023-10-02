@@ -171,3 +171,19 @@ class test_utils:
     def journey_date(sef):
         train_file=pd.read_excel("D:/Dev_Progs/irctc_projecct_robot/user_data/trains_data.xlsx")
         return  train_file.iloc[2,1] 
+    
+    @keyword
+    def train_number(self):
+        train_file=pd.read_excel("D:/Dev_Progs/irctc_projecct_robot/user_data/trains_data.xlsx")
+        return  train_file.iloc[3,1]
+    
+    @keyword
+    def seat_cetagory(self):
+        train_file=pd.read_excel("D:/Dev_Progs/irctc_projecct_robot/user_data/trains_data.xlsx")
+        return  train_file.iloc[4,1]
+
+    @keyword
+    def time_slot(self):
+        train_file=pd.read_excel("D:/Dev_Progs/irctc_projecct_robot/user_data/trains_data.xlsx")
+        return  train_file.iloc[5,1]
+    

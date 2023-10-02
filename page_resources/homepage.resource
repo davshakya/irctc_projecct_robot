@@ -34,9 +34,12 @@ ${date_formate_loc}    //*[@dateformat='dd/mm/yy']/span/input
 ${train_refresh}        //div[@class='tbis-div']//*[contains(text(),'{}')]/parent::div/parent::div/parent::div/div[5]//td[1]//span
 ${seat_status}        //div[@class='tbis-div']//*[contains(text(),'{}')]/parent::div/parent::div/parent::div/div[7]/div/div[3]//strong[contains(text(),'CURR_AVBL-') or contains(text(),'AVAILABLE-')]
 ${book_buttonloc}    //div[@class='tbis-div']//*[contains(text(),'{}')]/ancestor::app-train-avl-enq/div[2]//button
-${not_available}    //div[@class='tbis-div']//*[contains(text(),'{}')]/ancestor::app-train-avl-enq/div/div[7]//div[3]//td//strong[contains(text(),'NOT AVAILABLE')]
-${seat_select_button}        //div[@class='tbis-div']//*[contains(text(),'{}')]/ancestor::app-train-avl-enq/div/div[7]//li//strong/span[contains(text(),'{}')]
-
+${not_available}    //div[@class='tbis-div']//*[contains(text(),'{}')]/ancestor::app-train-avl-enq/div/div[7]//div[3]//td//strong[contains(text(),'NOT AVAILABLE') or contains(text(),'TRAIN DEPARTED')]
+${available_seat}        (//div[@class='tbis-div']//*[contains(text(),'{}')]/ancestor::app-train-avl-enq/div/div[7]//div[3]//td//strong[contains(text(),'AVAILABLE-')])[1]
+${seat_select_button}        //div[@class='tbis-div']//*[contains(text(),'{}')]/ancestor::app-train-avl-enq/div/div[7]//li//strong/span[contains(text(),'{}')][1]
+${show_available_trains_button}        //span[contains(text(),'Show Available Trains')]
+${yes_button_booking}    //button/span[contains(text(),'Yes')]
+${passenger_details_page}        //span[contains(text(),'Passenger Details')]
 
 
 *** Keywords ***
@@ -100,6 +103,54 @@ Set date of journey
     Click Element    ${get_xpath_for_date}   
 
 User should book ticket
+    Wait Until Element Is Visible    ${show_available_trains_button}     120
+    ${get_seat_cetagory}        seat_cetagory
+    ${get_train_number}        train_number
+    Click Element    ${show_available_trains_button} 
+
+    ${refresh_button_xpath}    Format String     ${train_refresh}    ${get_train_number}
+    Scroll Element Into View    ${refresh_button_xpath}      
+    Click Element    ${refresh_button_xpath}
+    ${select_seat_cetagory}    Format String    ${seat_select_button}     ${get_train_number}        ${get_seat_cetagory}        
+    Wait Until Element Is Visible    ${select_seat_cetagory}      60
+    Scroll Element Into View    ${select_seat_cetagory}      
+    Click Element    ${select_seat_cetagory}
+    ${get_seat_vacant_status}    Format String    ${not_available}     ${get_train_number}
+    ${isExist}=    Run Keyword And Return Status    Element Should Be Enabled      ${get_seat_vacant_status}
+    IF    ${isExist} == $True
+        Pass Execution    No ticket booked, Seat not available     
+    END
+    ${select_available_seat}    Format String    ${available_seat}     ${get_train_number}  
+    Wait Until Element Is Visible    ${select_available_seat}      60
+    Click Element    ${select_available_seat}
+    ${get_book_buttonloc}    Format String     ${book_buttonloc}    ${get_train_number}
+    Wait Until Element Is Visible    ${get_book_buttonloc}      60
+    Click Element    ${get_book_buttonloc}  
+    Sleep    5   
+    ${isExist}=    Run Keyword And Return Status    Element Should Be Enabled      ${yes_button_booking} 
+    IF   ${isExist} == $True
+        Click Element    ${yes_button_booking}     
+    END
+    Wait Until Element Is Visible    ${passenger_details_page}      60
+
+
+Login irctc portal
+    Wait Until Element Is Enabled    ${login_button}  
+    Click Element    ${login_button}  
+    Wait Until Element Is Enabled    ${user_name}  
+    Input Text    ${user_name}    davshakya
+    Input Text    ${password}      Ranjana21#
+    Enter captcha text
+
+User should search train
+    Sleep    2
+    Enter journey details to search train
+    Set date of journey
+    Click Element    ${search_button_loc} 
+
+
+
+    
     
     
     
