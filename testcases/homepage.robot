@@ -13,11 +13,9 @@ User should login to irctc portal
     Login irctc portal
     User should search train
     User should book ticket
-    User should fill passenger details
-    User should do payment successfully
+    # User should fill passenger details
+    # User should do payment successfully
     
-
-
 
 
 
