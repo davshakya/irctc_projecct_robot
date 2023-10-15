@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20231015 10:12:08.047" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="fille B" source="D:\Dev_Progs\irctc_projecct_robot\testcases\fille_B.robot">
+<test id="s1-s1-t1" name="Verify print method" line="14">
+<kw name="User Should Print hello">
+<msg timestamp="20231015 10:12:08.094" level="FAIL">No keyword with name 'User Should Print hello' found.</msg>
+<status status="FAIL" starttime="20231015 10:12:08.094" endtime="20231015 10:12:08.094"/>
+</kw>
+<status status="FAIL" starttime="20231015 10:12:08.094" endtime="20231015 10:12:08.094">No keyword with name 'User Should Print hello' found.</status>
+</test>
+<status status="FAIL" starttime="20231015 10:12:08.078" endtime="20231015 10:12:08.094"/>
+</suite>
+<status status="FAIL" starttime="20231015 10:12:08.063" endtime="20231015 10:12:08.094"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="fille B">Suites.fille B</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231015 10:12:08.094" level="ERROR">Error in file 'D:\Dev_Progs\irctc_projecct_robot\testcases\fille_B.robot' on line 2: Resource file 'C:\Users\davsh\Desktop\New folder\fila_A.robot' does not exist.</msg>
+</errors>
+</robot>

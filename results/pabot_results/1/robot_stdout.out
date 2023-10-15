@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.fille B                                                                
+==============================================================================
+Verify print method                                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Dev_Progs\irctc_projecct_robot\testcases\fille_B.robot:14
+    T:  Verify print method    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Dev_Progs\irctc_projecct_robot\testcases\fille_B.robot:16
+      User Should Print hello    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'User Should Print hello' found.
+------------------------------------------------------------------------------
+Suites.fille B                                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\Dev_Progs\irctc_projecct_robot\results\pabot_results\1\output.xml

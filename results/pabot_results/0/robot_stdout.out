@@ -1,0 +1,43 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Homepage                                                               
+==============================================================================
+User should login to irctc portal                                       
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Dev_Progs\irctc_projecct_robot\testcases\homepage.robot:10
+    T:  User should login to irctc portal    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Dev_Progs\irctc_projecct_robot\testcases\homepage.robot:11
+      Login irctc portal    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Dev_Progs\irctc_projecct_robot\page_resources\homepage.resource:138
+      Wait Until Element Is Enabled    ${login_button}
+      |  ${login_button} = //a[contains(text(),'LOGIN')] (str)
+______________________________________________________________________________
+| FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.152)
+Stacktrace:
+	GetHandleVerifier [0x00007FF79DAC7D12+55474]
+	(No symbol) [0x00007FF79DA377C2]
+	(No symbol) [0x00007FF79D8EE0EB]
+	(No symbol) [0x00007FF79D8CE528]
+	(No symbol) [0x00007FF79D953B77]
+	(No symbol) [0x00007FF79D9675BF]
+	(No symbol) [0x00007FF79D94EF33]
+	(No symbol) [0x00007FF79D923D41]
+	(No symbol) [0x00007FF79D924F84]
+	GetHandleVerifier [0x00007FF79DE2B762+3609346]
+	GetHandleVerifier [0x00007FF79DE81A80+3962400]
+	GetHandleVerifier [0x00007FF79DE79F0F+3930799]
+	GetHandleVerifier [0x00007FF79DB63CA6+694342]
+	(No symbol) [0x00007FF79DA42218]
+	(No symbol) [0x00007FF79DA3E484]
+	(No symbol) [0x00007FF79DA3E5B2]
+	(No symbol) [0x00007FF79DA2EE13]
+	BaseThreadInitThunk [0x00007FFA1276257D+29]
+	RtlUserThreadStart [0x00007FFA1318AA78+40]
+------------------------------------------------------------------------------
