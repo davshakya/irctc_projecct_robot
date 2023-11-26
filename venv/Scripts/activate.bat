@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\Dev_Progs\irctc_projecct_robot\venv
+set VIRTUAL_ENV=D:\Dev_Progs\GitLab_Project\irctc_projecct_robot\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Dev_Progs\irctc_projecct_robot\venv"
+VIRTUAL_ENV="D:\Dev_Progs\GitLab_Project\irctc_projecct_robot\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
