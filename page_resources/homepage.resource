@@ -140,7 +140,7 @@ Login irctc portal
     Wait Until Element Is Enabled    ${user_name}  
     Input Text    ${user_name}    davshakya
     Input Text    ${password}      Ranjana21#
-    Enter captcha text
+    # Enter captcha text
 
 User should search train
     Sleep    2
