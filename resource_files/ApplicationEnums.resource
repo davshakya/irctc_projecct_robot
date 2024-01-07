@@ -1,16 +1,10 @@
 *** Settings ***
 Resource    GlobalLibrary.resource
 *** Variables ***
-
 #studio application enums
-
 #pages_enum
-
 &{pages}=    Home=HomePage    Features=FeaturesPage    Delivery=DeliveryPage    BuildCard=MaxPage    Billing=BillingDetailsPage    Payment=PaymentPage    Installment=PaymentPlanPage    ThankYou=ThankYouPage
-
-
 #homepage enums
-
 #homepage data
 ${pro_template} =   9GAG
 @{pro_templates_list}        9GAG         Accuweather         Airbnb         Amazon Alexa
@@ -25,7 +19,6 @@ ${pro_template_price_prod} =   1321
 &{description_for_tabs}             All=Choose up to 3 templates (apps similar to your idea) to use as a base.     Pro=Build apps, websites, wearables – any software you can imagine. No coding skills needed.       Store=Complete small business packages for a low monthly cost                       
 @{list_of_description_to_search_template}        Online ecommerce platform selling clothes        random_text_asdfgrtyui            weather              
 &{bant_answer}=    what_best_describes_you=Manager        size_of_your_company=250 to 1,000 people        when_do_you_need_your_software_delivered=Less than 2 months        how_much_do_you_expect_to_spend=Less than ₹400,000        Which_app_category_would_it_fit_into=Business & finance  
-
 #studio Store page
 &{monthly_payment_overview}            Development Duration=5 months ( 20 weeks )           Number of Installments=24        Length of Contract=24 months     
 &{upfront_payment_overview}            Development Duration=5 months ( 20 weeks )           Length of Contract=24 months     

@@ -1,15 +1,12 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    RPA.Windows
 Resource     ../resource_files/GlobalLibrary.resource   
 *** Variables ***
-
 ${url}      https://www.irctc.co.in/
 ${radio}        //*[contains(text(),'Option4')]
 
 
 *** Keywords ***
-
 Initialise the browser
     Launch browser
 
